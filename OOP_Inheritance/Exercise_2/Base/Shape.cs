@@ -6,20 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP_Inheritance.Exercise_2.Base
 {
-    abstract class Shape
+    abstract class Shape(double height, double width)
     {
-        //Declaracion de propiedades de la Clase
-        public double Alto { get; set; }
-        public double Ancho { get; set; }
-
-        //Creacion del constructor de la clase abstractca
-        protected Shape(double alto, double ancho)
-        {
-            Alto = alto;
-            Ancho = ancho;
-        }
-
-        //Creacion del metodo abstracto
+        public double Height { get; set; } = height;
+        public double Width { get; set; } = width;
         public abstract double CalculateSurface();
     }
 }

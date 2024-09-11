@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace OOP_Inheritance.Exercise_2.Class
 {
-    //Declaracion de la clase Circle, heredando de la clase shape
-    class Circle : Shape
+    class Circle(double radius) : Shape(radius, radius)
     {
         public override double CalculateSurface()
         {
-            return Math.PI * (Ancho * 2);
+            return Math.PI * (Width * 2);
         }
     }
 }

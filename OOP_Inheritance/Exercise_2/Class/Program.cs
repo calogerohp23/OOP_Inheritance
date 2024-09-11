@@ -1,4 +1,4 @@
-using OOP_Inheritance.Exercise_2.Base;
+﻿using OOP_Inheritance.Exercise_2.Base;
 
 namespace OOP_Inheritance.Exercise_2.Class
 {
@@ -7,35 +7,36 @@ namespace OOP_Inheritance.Exercise_2.Class
         static void Main(string[] args)
         {
 
-            //Declaracion de variables:
-            double[] alto = new double[3];
-            double[] ancho = new double[3];
-            double radio = 0;
-            string[] figuras = { "Rectangulo", "Triangulo", "Circulo" };
+            //Declaration
+            double[] height = new double[2];
+            double[] width = new double[2];
+            double radius;
+            string[] figures = { "Rectangle", "Triangle", "Circle" };
 
 
-            //Ingresos de datos
+            //Input
 
-            Console.WriteLine("Bienvenido a la calculadora de Superficies del ITLA");
+            Console.WriteLine("Welcome to the Surface Calculator");
 
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine($"Ingrese el alto del {figuras[i]}:");
-                alto[i] = double.Parse(Console.ReadLine());
-                Console.WriteLine($"Ingrese el ancho del {figuras[i]}:");
-                ancho[i] = double.Parse(Console.ReadLine());
+                Console.WriteLine($"Insert the height of the {figures[i]}:");
+                height[i] = double.Parse(Console.ReadLine());
+                Console.WriteLine($"Insert the width of the {figures[i]}:");
+                width[i] = double.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine($"Ingrese el radio del {figuras[2]}");
+            Console.WriteLine($"Ingrese el radio del {figures[2]}");
+            radius = double.Parse(Console.ReadLine());
 
 
-            //Operaciones
-            Shape[] shapes = new Shape[]
-            {
-                new Rectangle(alto[1],ancho[1]),
-                new Triangle(alto[2],ancho[2]),
-                new Circle(radio)
-            };
+            //Operations
+            Shape[] shapes =
+            [
+                new Rectangle(height[0],width[0]),
+                new Triangle(height[1],width[1]),
+                new Circle(radius)
+            ];
 
             double[] areas = new double[shapes.Length];
 
@@ -44,10 +45,10 @@ namespace OOP_Inheritance.Exercise_2.Class
                 areas[i] = shapes[i].CalculateSurface();
             }
 
-            //Resultado
+            //Result
             for (int i = 0; i < areas.Length; i++)
             {
-                Console.WriteLine($"Area del {figuras[i]}: {areas[i]:F2}");
+                Console.WriteLine($"Area del {figures[i]}: {areas[i]:F2}");
             }
         }
     }

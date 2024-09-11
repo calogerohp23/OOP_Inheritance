@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace OOP_Inheritance.Exercise_2.Class
 {
-    //Declaracion de la clase Triangle, heredando de la clase shape
-    class Triangle : Shape
+    class Triangle(double height, double width) : Shape (height, width)
     {
         public override double CalculateSurface()
         {
-            return Alto * Ancho / 2;
+            return Height * Width / 2;
         }
     }
 }
