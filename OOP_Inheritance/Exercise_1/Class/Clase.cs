@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Inheritance.Exercise_1.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Inheritance.Exercise_1.Class
 {
-    public class Clase
+    public class Clase: IAdministrador<Estudiante>, IAdministrador<Profesor>, IAdministrador<Curso>
     {
         public string IdClase { get; set; }
         public List<Estudiante> Estudiantes { get; set; }
@@ -21,20 +22,19 @@ namespace OOP_Inheritance.Exercise_1.Class
             Cursos = new List<Curso>();
         }
 
-        public void AgregarEstudiantes(Estudiante estudiante)
+
+        void IAdministrador<Estudiante>.Agregar(Estudiante elemento)
         {
-            Estudiantes.Add(estudiante);
+            Estudiantes.Add(elemento);
         }
 
-        public void AgregarProfesores(Profesor profesor)
+        void IAdministrador<Profesor>.Agregar(Profesor profesor)
         {
             Profesores.Add(profesor);
         }
-
-        public void AgregarCurso(Curso curso)
+        void IAdministrador<Curso>.Agregar(Curso curso)
         {
             Cursos.Add(curso);
         }
-
     }
 }
