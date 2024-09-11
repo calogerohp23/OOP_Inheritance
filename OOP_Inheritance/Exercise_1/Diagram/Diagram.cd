@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ejercicio_1.Base.Persona">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAgABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ejercicio_1.Class.Clase">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCCAAAIQAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Clase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ejercicio_1.Class.Curso">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAABAAACA=</HashCode>
+      <FileName>Class\Curso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ejercicio_1.Class.Estudiante">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="Ejercicio_1.Base.Persona" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="2.997" />
+        <Point X="7" Y="3.5" />
+        <Point X="4.25" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Estudiante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ejercicio_1.Class.Profesor">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="Ejercicio_1.Base.Persona" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="2.997" />
+        <Point X="7" Y="3.5" />
+        <Point X="9.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Profesor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
