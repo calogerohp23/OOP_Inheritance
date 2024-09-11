@@ -1,4 +1,3 @@
-﻿using Exercise_2.Class;
 using OOP_Inheritance.Exercise_2.Base;
 
 namespace OOP_Inheritance.Exercise_2.Class
